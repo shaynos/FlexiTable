@@ -10,6 +10,30 @@
 		260A9BAA21B3787C0063FA6C /* FlexiTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260A9BA021B3787C0063FA6C /* FlexiTable.framework */; };
 		260A9BAF21B3787C0063FA6C /* FlexiTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BAE21B3787C0063FA6C /* FlexiTableTests.swift */; };
 		260A9BB121B3787C0063FA6C /* FlexiTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 260A9BA321B3787C0063FA6C /* FlexiTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		260A9BC721B3796C0063FA6C /* whiteX.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBB21B3796B0063FA6C /* whiteX.png */; };
+		260A9BC821B3796C0063FA6C /* whiteX.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBB21B3796B0063FA6C /* whiteX.png */; };
+		260A9BC921B3796C0063FA6C /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBC21B3796B0063FA6C /* back_arrow.png */; };
+		260A9BCA21B3796C0063FA6C /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBC21B3796B0063FA6C /* back_arrow.png */; };
+		260A9BCB21B3796C0063FA6C /* whiteX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBD21B3796B0063FA6C /* whiteX@2x.png */; };
+		260A9BCC21B3796C0063FA6C /* whiteX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBD21B3796B0063FA6C /* whiteX@2x.png */; };
+		260A9BCD21B3796C0063FA6C /* whiteX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBE21B3796B0063FA6C /* whiteX@3x.png */; };
+		260A9BCE21B3796C0063FA6C /* whiteX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBE21B3796B0063FA6C /* whiteX@3x.png */; };
+		260A9BCF21B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */; };
+		260A9BD021B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */; };
+		260A9BD121B3796C0063FA6C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */; };
+		260A9BD221B3796C0063FA6C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */; };
+		260A9BD321B3796C0063FA6C /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */; };
+		260A9BD421B3796C0063FA6C /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */; };
+		260A9BD521B3796C0063FA6C /* ParallaxBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC321B3796B0063FA6C /* ParallaxBackgroundView.swift */; };
+		260A9BD621B3796C0063FA6C /* ParallaxBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC321B3796B0063FA6C /* ParallaxBackgroundView.swift */; };
+		260A9BD721B3796C0063FA6C /* FlexiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC421B3796B0063FA6C /* FlexiTableViewController.swift */; };
+		260A9BD821B3796C0063FA6C /* FlexiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC421B3796B0063FA6C /* FlexiTableViewController.swift */; };
+		260A9BD921B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */; };
+		260A9BDA21B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */; };
+		260A9BDB21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */; };
+		260A9BDC21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */; };
+		260A9BDE21B37A8F0063FA6C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BDD21B37A8F0063FA6C /* LICENSE */; };
+		260A9BDF21B37A8F0063FA6C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BDD21B37A8F0063FA6C /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +53,18 @@
 		260A9BA921B3787C0063FA6C /* FlexiTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexiTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		260A9BAE21B3787C0063FA6C /* FlexiTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexiTableTests.swift; sourceTree = "<group>"; };
 		260A9BB021B3787C0063FA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260A9BBB21B3796B0063FA6C /* whiteX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteX.png; sourceTree = "<group>"; };
+		260A9BBC21B3796B0063FA6C /* back_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow.png; sourceTree = "<group>"; };
+		260A9BBD21B3796B0063FA6C /* whiteX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteX@2x.png"; sourceTree = "<group>"; };
+		260A9BBE21B3796B0063FA6C /* whiteX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteX@3x.png"; sourceTree = "<group>"; };
+		260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexiTableForegroundBackgroundView.swift; sourceTree = "<group>"; };
+		260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		260A9BC321B3796B0063FA6C /* ParallaxBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxBackgroundView.swift; sourceTree = "<group>"; };
+		260A9BC421B3796B0063FA6C /* FlexiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexiTableViewController.swift; sourceTree = "<group>"; };
+		260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedHeaderView.swift; sourceTree = "<group>"; };
+		260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		260A9BDD21B37A8F0063FA6C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +89,7 @@
 		260A9B9621B3787C0063FA6C = {
 			isa = PBXGroup;
 			children = (
+				260A9BDD21B37A8F0063FA6C /* LICENSE */,
 				260A9BA221B3787C0063FA6C /* FlexiTable */,
 				260A9BAD21B3787C0063FA6C /* FlexiTableTests */,
 				260A9BA121B3787C0063FA6C /* Products */,
@@ -71,6 +108,12 @@
 		260A9BA221B3787C0063FA6C /* FlexiTable */ = {
 			isa = PBXGroup;
 			children = (
+				260A9BBA21B3796B0063FA6C /* Assets */,
+				260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */,
+				260A9BC421B3796B0063FA6C /* FlexiTableViewController.swift */,
+				260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */,
+				260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */,
+				260A9BC021B3796B0063FA6C /* Views */,
 				260A9BA321B3787C0063FA6C /* FlexiTable.h */,
 				260A9BA421B3787C0063FA6C /* Info.plist */,
 			);
@@ -84,6 +127,27 @@
 				260A9BB021B3787C0063FA6C /* Info.plist */,
 			);
 			path = FlexiTableTests;
+			sourceTree = "<group>";
+		};
+		260A9BBA21B3796B0063FA6C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				260A9BBB21B3796B0063FA6C /* whiteX.png */,
+				260A9BBC21B3796B0063FA6C /* back_arrow.png */,
+				260A9BBD21B3796B0063FA6C /* whiteX@2x.png */,
+				260A9BBE21B3796B0063FA6C /* whiteX@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		260A9BC021B3796B0063FA6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */,
+				260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */,
+				260A9BC321B3796B0063FA6C /* ParallaxBackgroundView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +212,7 @@
 				TargetAttributes = {
 					260A9B9F21B3787C0063FA6C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					260A9BA821B3787C0063FA6C = {
 						CreatedOnToolsVersion = 10.0;
@@ -177,6 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A9BCD21B3796C0063FA6C /* whiteX@3x.png in Resources */,
+				260A9BC921B3796C0063FA6C /* back_arrow.png in Resources */,
+				260A9BCB21B3796C0063FA6C /* whiteX@2x.png in Resources */,
+				260A9BC721B3796C0063FA6C /* whiteX.png in Resources */,
+				260A9BDE21B37A8F0063FA6C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A9BCE21B3796C0063FA6C /* whiteX@3x.png in Resources */,
+				260A9BCA21B3796C0063FA6C /* back_arrow.png in Resources */,
+				260A9BCC21B3796C0063FA6C /* whiteX@2x.png in Resources */,
+				260A9BC821B3796C0063FA6C /* whiteX.png in Resources */,
+				260A9BDF21B37A8F0063FA6C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A9BCF21B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */,
+				260A9BD721B3796C0063FA6C /* FlexiTableViewController.swift in Sources */,
+				260A9BD921B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */,
+				260A9BD121B3796C0063FA6C /* ProfileHeaderView.swift in Sources */,
+				260A9BD321B3796C0063FA6C /* ParallaxHeaderView.swift in Sources */,
+				260A9BDB21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */,
+				260A9BD521B3796C0063FA6C /* ParallaxBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A9BD421B3796C0063FA6C /* ParallaxHeaderView.swift in Sources */,
 				260A9BAF21B3787C0063FA6C /* FlexiTableTests.swift in Sources */,
+				260A9BD621B3796C0063FA6C /* ParallaxBackgroundView.swift in Sources */,
+				260A9BD221B3796C0063FA6C /* ProfileHeaderView.swift in Sources */,
+				260A9BDA21B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */,
+				260A9BD821B3796C0063FA6C /* FlexiTableViewController.swift in Sources */,
+				260A9BDC21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */,
+				260A9BD021B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +430,7 @@
 		260A9BB521B3787C0063FA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaynebrady.FlexiTable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +456,7 @@
 		260A9BB621B3787C0063FA6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +481,7 @@
 		260A9BB821B3787C0063FA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlexiTableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +499,7 @@
 		260A9BB921B3787C0063FA6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlexiTableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

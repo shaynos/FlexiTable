@@ -38,18 +38,16 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
     var collectionViewCellWidth: CGFloat = 0
     
     public init(segmentTitles: NSArray, viewHeight: CGFloat, horizontalPadding: CGFloat){
-        print("INITING Seg View")
+        print("INITING SEG")
         self.segmentTitles = segmentTitles
-        self.viewHeight = 200
+        self.viewHeight = viewHeight
         self.minimumHorizontalPadding = horizontalPadding
         
         let flowLayout = UICollectionViewFlowLayout.init()
-        flowLayout.estimatedItemSize = CGSize(width: 100, height: 500)
+        flowLayout.estimatedItemSize = CGSize(width: 100, height: viewHeight)
         flowLayout.scrollDirection = .horizontal
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.minimumLineSpacing = 0
         
-        segmentCollectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), collectionViewLayout: flowLayout)
+        segmentCollectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: viewHeight - 2), collectionViewLayout: flowLayout)
         
         
         super.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: viewHeight))
@@ -74,11 +72,11 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
         indicatorLeadingConstraint = indicatorView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8)
         indicatorLeadingConstraint.isActive = true
         
-        self.backgroundColor = UIColor.purple
+        self.backgroundColor = deselectedColor
         checkCollectionViewCellWidth()
-
+        
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -138,38 +136,33 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
         return cell;
     }
     
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        print("CollWidth: ", self.segmentCollectionView.frame.size.width)
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if (staticCollectionViewWidth) {
-            print("Returning: ", collectionViewCellWidth, " ", viewHeight - 2)
             return CGSize(width: collectionViewCellWidth, height: viewHeight - 2)
         }
         let titleString: String = segmentTitles[indexPath.row] as! String
         
-        print("Returning: ", widthForString(string: titleString), " ", viewHeight - 2)
+        return CGSize(width: widthForString(string: titleString), height: viewHeight-2)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        if (!staticCollectionViewWidth) {
+            return 16
+        } else{
+            return 0
+        }
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if (!staticCollectionViewWidth) {
+            return 16
+        } else{
+            return 0
+        }
+    }
 
-        return CGSize(width: widthForString(string: titleString), height: viewHeight - 2)
-    }
-    
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if (!staticCollectionViewWidth) {
-            return 16
-        } else{
-            return 0
-        }
-    }
-    
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        if (!staticCollectionViewWidth) {
-            return 16
-        } else{
-            return 0
-        }
-    }
-    
-    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (!hasScrolled) {
             hasScrolled = true;
             return;
@@ -184,7 +177,8 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
         }
     }
     
-    private func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Collection Selected = ", indexPath.row)
         if (selectedIndex != indexPath.row) {
             prepareToSelectIndex(nextIndex: indexPath.row)
         }

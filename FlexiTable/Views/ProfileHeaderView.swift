@@ -52,25 +52,26 @@ public class ProfileHeaderView: FlexiTableForegroundBackgroundView {
         
     }
     
+    override public func flexiTableDidScroll(offset: CGFloat) {
+        subtitleLabel.alpha = 1 - offset / 100
+        imageView.layer.cornerRadius = imageView.frame.size.height / 2
+    }
+
+    
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override open func layoutSubviews() {
+    override public func layoutSubviews() {
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
     
-    override public func flexiTableDidScroll(offset: CGFloat) {
-        subtitleLabel.alpha = 1 - offset / 200
-        imageView.layer.cornerRadius = imageView.frame.size.height / 2
-    }
-    
-    override open func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         self.backgroundColor = UIColor.clear
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
     
-    override open func updateConstraints() {
+    override public func updateConstraints() {
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
         super.updateConstraints()
     }

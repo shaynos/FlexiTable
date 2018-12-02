@@ -221,6 +221,13 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     }
     
     private func layoutBackButton(){
+        let frameworkBundle = Bundle.init(for: FlexiTableViewController.self)
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("FlexiTable.bundle")
+        let resourceBundle = Bundle(url: bundleURL!)
+        let closeImage = UIImage(named: "whiteX.png", in: resourceBundle, compatibleWith: nil)
+        let backImage = UIImage(named: "back_arrow.png", in: resourceBundle, compatibleWith: nil)
+
+        
         if (foregroundView != nil){
             // no nav bar required as we have the header view. Add a navigation button to handle pop / dismiss
             backButton = UIButton.init()
@@ -238,9 +245,9 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
             backButton?.heightAnchor.constraint(equalToConstant: 30).isActive = true
             
             if (self == self.navigationController?.viewControllers[0]){
-                backButton?.setBackgroundImage(UIImage.init(named: "whiteX.png"), for: .normal)
+                backButton?.setBackgroundImage(closeImage, for: .normal)
             } else{
-                backButton?.setBackgroundImage(UIImage.init(named: "back_arrow.png"), for: .normal)
+                backButton?.setBackgroundImage(backImage, for: .normal)
             }
             
             backButton?.addTarget(self, action: #selector(self.dismiss), for: .touchUpInside)
@@ -249,7 +256,7 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
         } else{
             // add the back button to the nav bar if it is the root controller
             if (self == self.navigationController?.viewControllers[0]){
-                let backBarButton = UIBarButtonItem(image: UIImage.init(named: "whiteX.png"), style: .plain, target: self, action: #selector(self.dismiss))
+                let backBarButton = UIBarButtonItem(image: closeImage, style: .plain, target: self, action: #selector(self.dismiss))
                 self.navigationItem.leftBarButtonItem = backBarButton
             }
         }

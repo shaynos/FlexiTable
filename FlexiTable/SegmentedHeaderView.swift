@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol SegmentedHeaderDelegate: AnyObject {
+public protocol SegmentedHeaderDelegate: AnyObject {
     func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String)
     func segmentedHeaderShouldSelectSegement(atIndex: NSInteger, fromIndex: NSInteger) -> Bool
 }
 
-class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    weak var delegate: SegmentedHeaderDelegate?
+open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    public weak var delegate: SegmentedHeaderDelegate?
 
     let segmentTitles: NSArray
     let viewHeight: CGFloat
     let minimumHorizontalPadding: CGFloat
     
-    var buttonFont: (UIFont) = UIFont.systemFont(ofSize: 16)
+    public var buttonFont: (UIFont) = UIFont.systemFont(ofSize: 16)
     
     var segmentCollectionView: UICollectionView
     var indicatorView: UIView = UIView()
@@ -38,18 +38,18 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
     var collectionViewCellWidth: CGFloat = 0
     
     public init(segmentTitles: NSArray, viewHeight: CGFloat, horizontalPadding: CGFloat){
-        
+        print("INITING Seg View")
         self.segmentTitles = segmentTitles
-        self.viewHeight = viewHeight
+        self.viewHeight = 200
         self.minimumHorizontalPadding = horizontalPadding
         
         let flowLayout = UICollectionViewFlowLayout.init()
-        flowLayout.estimatedItemSize = CGSize(width: 100, height: viewHeight)
+        flowLayout.estimatedItemSize = CGSize(width: 100, height: 500)
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
         
-        segmentCollectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: viewHeight), collectionViewLayout: flowLayout)
+        segmentCollectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), collectionViewLayout: flowLayout)
         
         
         super.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: viewHeight))
@@ -74,16 +74,17 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         indicatorLeadingConstraint = indicatorView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8)
         indicatorLeadingConstraint.isActive = true
         
-        self.backgroundColor = deselectedColor
+        self.backgroundColor = UIColor.purple
         checkCollectionViewCellWidth()
 
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func updateConstraints() {
+    override open func updateConstraints() {
+        print("laying out constraints")
         self.widthAnchor.constraint(equalTo: (self.superview?.widthAnchor)!, multiplier: 1).isActive = true
         self.heightAnchor.constraint(equalToConstant: viewHeight).isActive = true
         self.centerXAnchor.constraint(equalTo: (self.superview?.centerXAnchor)!).isActive = true
@@ -119,11 +120,11 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
     
     //COLECUIOT VIEW STUFF
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return segmentTitles.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: SegmentedHeaderCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "segCell", for: indexPath) as! SegmentedHeaderCollectionViewCell
         cell.setTitle(title: segmentTitles[indexPath.row] as! String, font: buttonFont)
@@ -137,17 +138,22 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         return cell;
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        print("CollWidth: ", self.segmentCollectionView.frame.size.width)
         
         if (staticCollectionViewWidth) {
+            print("Returning: ", collectionViewCellWidth, " ", viewHeight - 2)
             return CGSize(width: collectionViewCellWidth, height: viewHeight - 2)
         }
         let titleString: String = segmentTitles[indexPath.row] as! String
         
+        print("Returning: ", widthForString(string: titleString), " ", viewHeight - 2)
+
         return CGSize(width: widthForString(string: titleString), height: viewHeight - 2)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if (!staticCollectionViewWidth) {
             return 16
         } else{
@@ -155,7 +161,7 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if (!staticCollectionViewWidth) {
             return 16
         } else{
@@ -163,7 +169,7 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (!hasScrolled) {
             hasScrolled = true;
             return;
@@ -178,7 +184,7 @@ class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    private func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (selectedIndex != indexPath.row) {
             prepareToSelectIndex(nextIndex: indexPath.row)
         }

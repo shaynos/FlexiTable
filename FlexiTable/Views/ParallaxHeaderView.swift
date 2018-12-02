@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ParallaxHeaderView: FlexiTableForegroundBackgroundView {
+public class ParallaxHeaderView: FlexiTableForegroundBackgroundView {
     
-    let headerLabel = UILabel()
+    public let headerLabel = UILabel()
     let labelTopConstraint = NSLayoutConstraint()
     
-    init(title: String, font: UIFont, textColor: UIColor){
+    public init(title: String, font: UIFont, textColor: UIColor){
         headerLabel.text = title
         headerLabel.font = font
         headerLabel.textColor = textColor
@@ -24,7 +24,7 @@ class ParallaxHeaderView: FlexiTableForegroundBackgroundView {
         
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
         headerLabel.leadingAnchor .constraint(equalTo: self.leadingAnchor, constant: 35).isActive = true
@@ -33,7 +33,7 @@ class ParallaxHeaderView: FlexiTableForegroundBackgroundView {
         headerLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

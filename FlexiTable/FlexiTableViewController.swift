@@ -11,7 +11,7 @@ import UIKit
 let ANIMATION_DURATION = 0.3;
 public let FLEXI_TABLE_SCROLL_NOTIFICATION = "FLEXI_TABLE_SCROLL_NOTIFICATION"
 
-class FlexiTableViewController: UIViewController, UITableViewDelegate{
+open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     
     private var statusBarHeight: CGFloat = 0
     private var screenWidth: CGFloat = 0
@@ -35,7 +35,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
     public var tableview: UITableView
     public var backButton: UIButton?
     
-    override func loadView() {
+    override open func loadView() {
         self.view = UIView()
         if (self.view == nil){
             super.loadView()
@@ -69,7 +69,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
         super.init(nibName: nil, bundle: nil)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(scrollNotificationReceived(notification:)), name: NSNotification.Name(rawValue: FLEXI_TABLE_SCROLL_NOTIFICATION), object: nil)
         
         super.viewDidAppear(animated)
@@ -78,7 +78,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
     }
     
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: FLEXI_TABLE_SCROLL_NOTIFICATION), object: nil)
         
         if (self.isMovingFromParent){
@@ -87,7 +87,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
         super.viewWillDisappear(animated)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         self.extendedLayoutIncludesOpaqueBars = true
         
         self.setUpNavBar()
@@ -126,7 +126,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
         }
     }
         
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -320,7 +320,7 @@ class FlexiTableViewController: UIViewController, UITableViewDelegate{
         tableViewHeaderForegroundHeight = height;
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView == tableview) {
             tableviewDidScroll(offset: tableview.contentOffset.y)
         }

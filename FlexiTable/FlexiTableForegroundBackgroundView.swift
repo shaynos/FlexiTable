@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlexiTableForegroundBackgroundView: UIView {
+open class FlexiTableForegroundBackgroundView: UIView {
 
     public func flexiTableDidScroll(offset: CGFloat){
         

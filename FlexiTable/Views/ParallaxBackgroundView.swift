@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ParallaxBackgroundView: FlexiTableForegroundBackgroundView {
+public class ParallaxBackgroundView: FlexiTableForegroundBackgroundView {
     let imageView: UIImageView
     let dimmerView = UIView()
     
-    init(image: UIImage){
+    public init(image: UIImage){
         imageView = UIImageView.init(frame: CGRect.zero)
         imageView.image = image
         imageView.backgroundColor = UIColor.orange
@@ -30,7 +30,7 @@ class ParallaxBackgroundView: FlexiTableForegroundBackgroundView {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

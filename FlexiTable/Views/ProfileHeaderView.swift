@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ProfileHeaderView: FlexiTableForegroundBackgroundView {
+public class ProfileHeaderView: FlexiTableForegroundBackgroundView {
     var maxImageHeight: CGFloat?
     let imageView = UIImageView()
-    let titleLabel = UILabel()
-    let subtitleLabel = UILabel()
+    public let titleLabel = UILabel()
+    public let subtitleLabel = UILabel()
     
-    init(maxImageHeight: CGFloat, image: UIImage, title: String, subtitle: String) {
+    public init(maxImageHeight: CGFloat, image: UIImage, title: String, subtitle: String) {
         self.maxImageHeight = maxImageHeight
         self.imageView.image = image
         self.titleLabel.text = title
@@ -52,25 +52,25 @@ class ProfileHeaderView: FlexiTableForegroundBackgroundView {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
     
-    override func flexiTableDidScroll(offset: CGFloat) {
+    override public func flexiTableDidScroll(offset: CGFloat) {
         subtitleLabel.alpha = 1 - offset / 200
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         self.backgroundColor = UIColor.clear
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
     }
     
-    override func updateConstraints() {
+    override open func updateConstraints() {
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
         super.updateConstraints()
     }

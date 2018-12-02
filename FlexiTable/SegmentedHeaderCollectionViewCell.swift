@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SegmentedHeaderCollectionViewCell: UICollectionViewCell {
+open class SegmentedHeaderCollectionViewCell: UICollectionViewCell {
     let titleLabel: UILabel
     
     override init(frame: CGRect){
@@ -19,7 +19,7 @@ class SegmentedHeaderCollectionViewCell: UICollectionViewCell {
         self.addSubview(titleLabel)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -32,7 +32,7 @@ class SegmentedHeaderCollectionViewCell: UICollectionViewCell {
         titleLabel.font = font
     }
     
-    override func updateConstraints() {
+    override open func updateConstraints() {
         titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         

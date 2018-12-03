@@ -27,7 +27,10 @@ s.source = { :git => "https://github.com/shaynos/FlexiTable.git",
 s.source_files = "FlexiTable/**/*.{swift}"
 
 # 9
-s.resources = "FlexiTable/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+#s.resources = "FlexiTable/Assets/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+#s.resources = "FlexiTable/FlexiTableAssets/*.xcassets"
+#s.resource_bundles = {'FlexiTable' => 'FlexiTable/Assets/*.png'}
+s.resources = 'FlexiTable/Assets/*.png'
 
 # 10
 s.swift_version = "4.2"

@@ -34,6 +34,7 @@
 		260A9BDC21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */; };
 		260A9BDE21B37A8F0063FA6C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BDD21B37A8F0063FA6C /* LICENSE */; };
 		260A9BDF21B37A8F0063FA6C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BDD21B37A8F0063FA6C /* LICENSE */; };
+		260A9C5421B4B52E0063FA6C /* FlexiTableAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C5321B4B52E0063FA6C /* FlexiTableAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedHeaderView.swift; sourceTree = "<group>"; };
 		260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		260A9BDD21B37A8F0063FA6C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		260A9C5321B4B52E0063FA6C /* FlexiTableAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlexiTableAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		260A9BBA21B3796B0063FA6C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				260A9C5321B4B52E0063FA6C /* FlexiTableAssets.xcassets */,
 				260A9BBB21B3796B0063FA6C /* whiteX.png */,
 				260A9BBC21B3796B0063FA6C /* back_arrow.png */,
 				260A9BBD21B3796B0063FA6C /* whiteX@2x.png */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A9C5421B4B52E0063FA6C /* FlexiTableAssets.xcassets in Resources */,
 				260A9BCD21B3796C0063FA6C /* whiteX@3x.png in Resources */,
 				260A9BC921B3796C0063FA6C /* back_arrow.png in Resources */,
 				260A9BCB21B3796C0063FA6C /* whiteX@2x.png in Resources */,

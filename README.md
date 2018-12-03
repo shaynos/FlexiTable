@@ -28,6 +28,19 @@ consists of 3 main parts:
 -   UITableView
 
 
+=======
+How does it work
+----------------
+FlexiTable uses anchors to create a flexible space above the table which is used to layer multiple views. An empty tableHeaderView is added to the tableView to accomodate these views. 
+
+#### 1- FlexiHeaderView
+FlexiHeaderView is a UIView subclass which acts as the header for the FlexiTableViewController, it reacts to scroll events by shrinking or expanding depending on which way the user is scrolling and the contentOffset of the tableView.
+
+#### 1- SegmentedHeaderView
+SegmentedHeaderView is a UICollectionView subclass which acts as the header for the tableView, it reacts to scroll events by moving with the tableView content as the user scrolls. It will stick to the top of the tableView to ensure that it is always present on the screen. A user can change the content of the tableView by selecting an option from the SegmentedHeaderView.
+
+
+
 Features
 --------
 
@@ -60,6 +73,7 @@ adding it to your `Podfile`:
 pod 'FlexiTable'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
  
 
 Usage example
@@ -80,6 +94,27 @@ class MyViewController: FlexiTableViewController, SegmentedHeaderDelegate{
     }
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+=======
+Usage example
+-------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ swift
+class MyViewController: FlexiTableViewController, SegmentedHeaderDelegate{
+    
+    override func viewDidLoad() {
+        self.segmentedHeaderView = SegmentedHeaderView.init(segmentTitles: ["No Sections", "Sections"], viewHeight: 50, horizontalPadding: 20)
+        self.segmentedHeaderView?.delegate = self
+        self.foregroundView = ParallaxHeaderView.init(title: "Parallax Header", font: UIFont.systemFont(ofSize: 22), textColor: UIColor.white, headerPosition: .center)
+        self.backgroundView = ParallaxBackgroundView.init(image: UIImage(named: "concert.jpeg")!)
+    }
+    
+    func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String) {
+        print("SEG SELECTED == ", index)
+    }
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Customising the SegementedHeader
 --------------------------------

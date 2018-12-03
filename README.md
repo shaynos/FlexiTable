@@ -16,13 +16,16 @@ FlexiTable works well with all iPhone screen types and sizes.
  
 
 The main component of FlexiTable is the FlexiTableViewController (FTVC) which
-consists of 2 main parts:
+consists of 3 main parts:
 
 -   HeaderBackgroundView (UIView subclass which acts as the header for the FTVC,
     reacts to scroll events)
 
 -   SegmentedHeaderView (contains a UICollectionView for selecting different
     sets of data to display in the table)
+
+-   UITableView (contains a UICollectionView for selecting different sets of
+    data to display in the table)
 
  
 
@@ -34,18 +37,20 @@ consists of 2 main parts:
 
  
 
-Layout
-------
+Features
+--------
 
--   [x] Feature 1
+-   [x] Tested on iOS 9 +
 
--   [x] Feature 2
+-   [X] Customisable
 
--   [x] Feature 3
+-   [x] Built to work with all screen sizes and types
 
--   [x] Feature 4
+-   [x] Fully configurable header
 
--   [x] Feature 5
+-   [x] Comes with 2 different types of animated headers (Parallax and Profile)
+
+-   [x] Build your own animated header that responds to UITableView scroll
 
 Requirements
 ------------
@@ -61,8 +66,6 @@ You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by
 adding it to your `Podfile`:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
-platform :ios, '9.0'
-use_frameworks!
 pod 'FlexiTable'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -79,9 +82,17 @@ Usage example
 -------------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ swift
-import EZSwiftExtensions
-ez.detectScreenShot { () -> () in
-    print("User took a screen shot")
+import FlexiTable
+class MyViewController: FlexiTableViewController, SegmentedHeaderDelegate{
+override func viewDidLoad() {
+    self.segmentedHeaderView = SegmentedHeaderView.init(segmentTitles: ["No Sections", "Sections"], viewHeight: 50, horizontalPadding: 20)
+    self.foregroundView = ParallaxHeaderView.init(title: "Parallax Header", font: UIFont.systemFont(ofSize: 22), textColor: UIColor.white, headerPosition: .center)
+    self.backgroundView = ParallaxBackgroundView.init(image: UIImage(named: "concert.jpeg")!)
+}
+
+func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String) {
+    print("SEG SELECTED == ", index)
+}
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -95,12 +106,6 @@ file for more info.
 
  
 
-Meta
-----
+Distributed under the MIT license. See `LICENSE` for more information.
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) –
-YourEmail\@example.com
-
-Distributed under the XYZ license. See `LICENSE` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/shaynos/FlexiTable](https://github.com/dbader/)

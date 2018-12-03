@@ -5,7 +5,7 @@ s.ios.deployment_target = '9.0'
 s.name = "FlexiTable"
 s.summary = "FlexiTable."
 s.requires_arc = true
-
+s.description = "FlexiTable provides a simple way to display multiple sets of information in a single UITableview."
 s.version = "0.2.0"
 
 s.license = { :type => "MIT", :file => "LICENSE" }

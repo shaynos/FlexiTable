@@ -28,7 +28,7 @@ consists of 3 main parts:
 -   UITableView
 
 
-=======
+
 How does it work
 ----------------
 FlexiTable uses anchors to create a flexible space above the table which is used to layer multiple views. An empty tableHeaderView is added to the tableView to accomodate these views. 

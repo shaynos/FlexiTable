@@ -9,10 +9,6 @@ FlexiTable
 >   respond to scroll events, making subtle animations and custom header designs
 >   easy to implement.
 
-<https://swift.org/>
-
-FlexiTable works well with all iPhone screen types and sizes.
-
  
 
 The main component of FlexiTable is the FlexiTableViewController (FTVC) which
@@ -30,6 +26,7 @@ consists of 3 main parts:
  
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gifsicle -b animated.gif -O3 -o your_out.gif
 ![](animated.gif)
 ![](animated 2.gif)
 ![](animated 3.gif)
@@ -67,13 +64,6 @@ adding it to your `Podfile`:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
 pod 'FlexiTable'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import UIKit
-import FlexiTable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  

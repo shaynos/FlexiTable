@@ -9,7 +9,9 @@ FlexiTable
 >   respond to scroll events, making subtle animations and custom header designs
 >   easy to implement.
 
-<a href="https://imgflip.com/gif/2o0zsp"><img src="https://i.imgflip.com/2o0zsp.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/2o1085"><img src="https://i.imgflip.com/2o1085.gif" title="made at imgflip.com"/></a>
+
+<a href="https://imgflip.com/gif/2o109l"><img src="https://i.imgflip.com/2o109l.gif" title="made at imgflip.com"/></a>
 
 The main component of FlexiTable is the FlexiTableViewController (FTVC) which
 consists of 3 main parts:

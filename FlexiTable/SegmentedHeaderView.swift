@@ -38,7 +38,6 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
     var collectionViewCellWidth: CGFloat = 0
     
     public init(segmentTitles: NSArray, viewHeight: CGFloat, horizontalPadding: CGFloat){
-        print("INITING SEG")
         self.segmentTitles = segmentTitles
         self.viewHeight = viewHeight
         self.minimumHorizontalPadding = horizontalPadding
@@ -76,13 +75,24 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
         checkCollectionViewCellWidth()
         
     }
+    
+    public func setSelectedColor(color: UIColor){
+        self.selectedColor = color
+        self.indicatorView.backgroundColor = color
+    }
+    
+    public func setDeselectedColor(color: UIColor){
+        self.deselectedColor = color
+        self.backgroundColor = color
+    }
 
+    
+    
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override open func updateConstraints() {
-        print("laying out constraints")
         self.widthAnchor.constraint(equalTo: (self.superview?.widthAnchor)!, multiplier: 1).isActive = true
         self.heightAnchor.constraint(equalToConstant: viewHeight).isActive = true
         self.centerXAnchor.constraint(equalTo: (self.superview?.centerXAnchor)!).isActive = true
@@ -98,15 +108,15 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
         if (staticCollectionViewWidth) {
             indicatorWidthConstraint = indicatorView.widthAnchor.constraint(equalToConstant: collectionViewCellWidth)
             
-            print("DOING STATIC == ", collectionViewCellWidth)
         } else{
-            print("DOING NOT STATIC == ", widthForString(string: segmentTitles[selectedIndex] as! String))
             indicatorWidthConstraint = indicatorView.widthAnchor.constraint(equalToConstant: widthForString(string: segmentTitles[selectedIndex] as! String))
 
             //indicatorView.widthAnchor.constraint(equalToConstant: widthForString(string: segmentTitles[selectedIndex] as! String)).isActive = true
         }
         indicatorWidthConstraint.isActive = true;
-
+        
+        indicatorView.backgroundColor = selectedColor
+        self.backgroundColor = deselectedColor
         super.updateConstraints()
     }
     
@@ -178,7 +188,6 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Collection Selected = ", indexPath.row)
         if (selectedIndex != indexPath.row) {
             prepareToSelectIndex(nextIndex: indexPath.row)
         }

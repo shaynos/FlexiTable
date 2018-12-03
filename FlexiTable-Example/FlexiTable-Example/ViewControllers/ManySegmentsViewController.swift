@@ -49,7 +49,6 @@ class ManySegmentsViewController: FlexiTableViewController, SegmentedHeaderDeleg
     }
     
     func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String) {
-        print("SEG SELECTED == ", index)
         switch index {
         case 0:
             tableview.dataSource = peopleTableAdapter

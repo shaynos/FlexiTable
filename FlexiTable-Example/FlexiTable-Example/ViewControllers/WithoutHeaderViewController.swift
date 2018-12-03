@@ -28,17 +28,13 @@ class WithoutHeaderViewController: FlexiTableViewController, SegmentedHeaderDele
     }
     
     func setUpSegmentedHeader(){
-        print("BOUT TO")
-        let seg = SegmentedHeaderView.init(segmentTitles: ["No Sections", "Sections"], viewHeight: 200, horizontalPadding: 10)
-        print("SEG == ", seg)
-        
+        let seg = SegmentedHeaderView.init(segmentTitles: ["No Sections", "Sections"], viewHeight: 50, horizontalPadding: 10)
         seg.delegate = self
         seg.buttonFont = UIFont(name: "KohinoorBangla-Semibold", size: 16)!
         self.segmentedHeaderView = seg
     }
         
     func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String) {
-        print("SEG SELECTED == ", index)
         switch index {
         case 0:
             tableview.dataSource = peopleTableAdapter

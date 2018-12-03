@@ -115,4 +115,4 @@ file for more info.
 
 Distributed under the MIT license. See `LICENSE` for more information.
 
-[https://github.com/shaynos/FlexiTable](https://github.com/dbader/)
+[https://github.com/shaynos/FlexiTable](https://github.com/shaynos/FlexiTable)

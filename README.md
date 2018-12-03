@@ -1,10 +1,5 @@
 FlexiTable
 ==========
-
-<https://travis-ci.org/stbrady@hotmail.com.au/shayno>
-<https://cocoapods.org/pods/shayno> <https://cocoapods.org/pods/shayno>
-<https://cocoapods.org/pods/shayno>
-
 Example
 -------
 

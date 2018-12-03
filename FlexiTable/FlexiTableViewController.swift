@@ -30,8 +30,8 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     tableTopConstraint: NSLayoutConstraint?
     
     public var segmentedHeaderView: SegmentedHeaderView?
-    public var foregroundView: FlexiTableForegroundBackgroundView?
-    public var backgroundView: FlexiTableForegroundBackgroundView?
+    public var foregroundView: FlexiHeaderView?
+    public var backgroundView: FlexiHeaderView?
     public var tableview: UITableView
     public var backButton: UIButton?
     
@@ -57,7 +57,7 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     }
     
     
-    public init(backgroundView: FlexiTableForegroundBackgroundView, foregroundView: FlexiTableForegroundBackgroundView, segmentedHeaderView: SegmentedHeaderView){
+    public init(backgroundView: FlexiHeaderView, foregroundView: FlexiHeaderView, segmentedHeaderView: SegmentedHeaderView){
         self.backgroundView = backgroundView
         self.foregroundView = foregroundView
         self.segmentedHeaderView = segmentedHeaderView

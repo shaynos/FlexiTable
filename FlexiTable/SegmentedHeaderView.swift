@@ -26,8 +26,8 @@ open class SegmentedHeaderView: UIView, UICollectionViewDelegate, UICollectionVi
     var indicatorView: UIView = UIView()
     var hasScrolled: Bool = false
     
-    var selectedColor = UIColor.black
-    var deselectedColor = UIColor.lightGray
+    public var selectedColor = UIColor.black
+    public var deselectedColor = UIColor.lightGray
     
     var indicatorLeadingConstraint: NSLayoutConstraint = NSLayoutConstraint()
     var indicatorWidthConstraint: NSLayoutConstraint = NSLayoutConstraint()

@@ -14,7 +14,7 @@ public enum parallaxHeaderPosition {
     case bottom
 }
 
-public class ParallaxHeaderView: FlexiTableForegroundBackgroundView {
+public class ParallaxHeaderView: FlexiHeaderView {
     
     public let headerLabel = UILabel()
     let labelTopConstraint = NSLayoutConstraint()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ProfileHeaderView: FlexiTableForegroundBackgroundView {
+public class ProfileHeaderView: FlexiHeaderView {
     var maxImageHeight: CGFloat?
     let imageView = UIImageView()
     public let titleLabel = UILabel()

@@ -95,26 +95,6 @@ class MyViewController: FlexiTableViewController, SegmentedHeaderDelegate{
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-=======
-Usage example
--------------
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ swift
-class MyViewController: FlexiTableViewController, SegmentedHeaderDelegate{
-    
-    override func viewDidLoad() {
-        self.segmentedHeaderView = SegmentedHeaderView.init(segmentTitles: ["No Sections", "Sections"], viewHeight: 50, horizontalPadding: 20)
-        self.segmentedHeaderView?.delegate = self
-        self.foregroundView = ParallaxHeaderView.init(title: "Parallax Header", font: UIFont.systemFont(ofSize: 22), textColor: UIColor.white, headerPosition: .center)
-        self.backgroundView = ParallaxBackgroundView.init(image: UIImage(named: "concert.jpeg")!)
-    }
-    
-    func segmentedHeaderViewSelectedButtonAtIndex(index: NSInteger, title: String) {
-        print("SEG SELECTED == ", index)
-    }
-}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 Customising the SegementedHeader
 --------------------------------

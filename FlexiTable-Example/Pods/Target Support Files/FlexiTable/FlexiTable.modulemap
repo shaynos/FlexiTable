@@ -1,0 +1,6 @@
+framework module FlexiTable {
+  umbrella header "FlexiTable-umbrella.h"
+
+  export *
+  module * { export * }
+}

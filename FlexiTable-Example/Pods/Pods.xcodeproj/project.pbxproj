@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0699161116B3ABA08A5657CE1CE6626F /* whiteX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67323DE67C93D5FDBE93C11A27237590 /* whiteX@3x.png */; };
+		139DD1F73F79F42D9D6FC856F0D5F979 /* Pods-FlexiTable-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 950A13A7D5EB13626DF38C5B176B0746 /* Pods-FlexiTable-Example-dummy.m */; };
+		1905678921C32331865EEAED30DDDD80 /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 804B9ADB6E1F867D9C8092F2E0DCA157 /* back_arrow.png */; };
+		39A5A27000B9A2564345DB27257D5344 /* FlexiHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F2BFEEF41786F7F6FB923D07C7485 /* FlexiHeaderView.swift */; };
+		3E61582581A399C046C3B5DD98983983 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342EB5672B90B6DEAEC1E83008B2B71 /* ProfileHeaderView.swift */; };
+		840110F89097C561F1820F951A3CD18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		8F5D9FA3A654052F0C5507CD0674F8AB /* whiteX.png in Resources */ = {isa = PBXBuildFile; fileRef = 793608EF41268EFCC065CD565E8C0150 /* whiteX.png */; };
+		9ACCC3A486F1DEE4DFF0F505363B1AB2 /* Pods-FlexiTable-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29562D6E3BD3F4A00891142A82656B3F /* Pods-FlexiTable-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A07290F01E7E0BE63232F42F8D689CA6 /* FlexiTable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC7FDC143F0E5668E4FEFB8266D2257 /* FlexiTable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B776BE739C448D8220F827275221F7DB /* whiteX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6172C9EF7CBE86E1ADCD86AB1727F557 /* whiteX@2x.png */; };
+		BEBCA531ED1985D02CA718A9B5A0A571 /* ParallaxBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69453E631A0A0439DBCC9F8E5C7600 /* ParallaxBackgroundView.swift */; };
+		D431E5CE48F6D6E62E54E6D097269CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EC001AD951557AF70D2A1389E973E699 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9B88883D164C53585F96C7913E401 /* ParallaxHeaderView.swift */; };
+		F2F840940C76932D81DFF6DC691980BA /* SegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C509A4560BA24127A0FDDD373DCEB /* SegmentedHeaderView.swift */; };
+		F35E01EE3D6E732720A31FDF4ABC7B3F /* FlexiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD66B406680EF5D4C9E0CB357E57BFD6 /* FlexiTableViewController.swift */; };
+		F4F6CB4E90257E26D93688705D74D212 /* SegmentedHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91542FEFAA7CF6FA3F365C8FF98507 /* SegmentedHeaderCollectionViewCell.swift */; };
+		F7DE2FA85F11D801AF05DF2A9C4F22CC /* FlexiTable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83843DA6D69A49AA16F277BD55CCE8D2 /* FlexiTable-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B488B38ABB40355959E672358451BA68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B279DD90526DA373A6345E5FAB7689D1;
+			remoteInfo = FlexiTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180D199668FC9052CC77E3953D7E4E25 /* FlexiTable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexiTable.modulemap; sourceTree = "<group>"; };
+		22794A10FA26F3B1A033EDEEC00846C2 /* Pods-FlexiTable-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexiTable-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		29562D6E3BD3F4A00891142A82656B3F /* Pods-FlexiTable-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexiTable-Example-umbrella.h"; sourceTree = "<group>"; };
+		2EE084D6EF4DC4094BF9903091CE94D6 /* Pods-FlexiTable-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexiTable-Example.modulemap"; sourceTree = "<group>"; };
+		4878FA30CA58A42CC2FC404AA099E14B /* FlexiTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexiTable.framework; path = FlexiTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1E404B0367F87389F30DEDA3397C34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6172C9EF7CBE86E1ADCD86AB1727F557 /* whiteX@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whiteX@2x.png"; path = "FlexiTable/Assets/whiteX@2x.png"; sourceTree = "<group>"; };
+		62EF908B35B1666DE00B5B464C61D502 /* Pods-FlexiTable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexiTable-Example.release.xcconfig"; sourceTree = "<group>"; };
+		67323DE67C93D5FDBE93C11A27237590 /* whiteX@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "whiteX@3x.png"; path = "FlexiTable/Assets/whiteX@3x.png"; sourceTree = "<group>"; };
+		68C85ECCBE5E44178D4758E5F64CCC5A /* Pods-FlexiTable-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexiTable-Example-resources.sh"; sourceTree = "<group>"; };
+		732B391F6F5B9EDC9C0FBA478674BF21 /* FlexiTable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FlexiTable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		736A8733444A448E01A596CCBD0364B2 /* Pods-FlexiTable-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexiTable-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		786C509A4560BA24127A0FDDD373DCEB /* SegmentedHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedHeaderView.swift; path = FlexiTable/SegmentedHeaderView.swift; sourceTree = "<group>"; };
+		793608EF41268EFCC065CD565E8C0150 /* whiteX.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = whiteX.png; path = FlexiTable/Assets/whiteX.png; sourceTree = "<group>"; };
+		7E3F2BFEEF41786F7F6FB923D07C7485 /* FlexiHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexiHeaderView.swift; path = FlexiTable/FlexiHeaderView.swift; sourceTree = "<group>"; };
+		804B9ADB6E1F867D9C8092F2E0DCA157 /* back_arrow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = back_arrow.png; path = FlexiTable/Assets/back_arrow.png; sourceTree = "<group>"; };
+		80DAD267DD37A5F31FAFB6763EECD0A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		83843DA6D69A49AA16F277BD55CCE8D2 /* FlexiTable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexiTable-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950A13A7D5EB13626DF38C5B176B0746 /* Pods-FlexiTable-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexiTable-Example-dummy.m"; sourceTree = "<group>"; };
+		A9A7B825BCA6E961CE935AB5C0B98205 /* FlexiTable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexiTable.xcconfig; sourceTree = "<group>"; };
+		AE3D751F29F64582DA96B0F4B2C6ECE8 /* FlexiTable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexiTable-prefix.pch"; sourceTree = "<group>"; };
+		B8DC8BC474A7ED109D7680509A856E49 /* Pods_FlexiTable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlexiTable_Example.framework; path = "Pods-FlexiTable-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC7FDC143F0E5668E4FEFB8266D2257 /* FlexiTable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexiTable-umbrella.h"; sourceTree = "<group>"; };
+		BD66B406680EF5D4C9E0CB357E57BFD6 /* FlexiTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexiTableViewController.swift; path = FlexiTable/FlexiTableViewController.swift; sourceTree = "<group>"; };
+		C342EB5672B90B6DEAEC1E83008B2B71 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		CB69453E631A0A0439DBCC9F8E5C7600 /* ParallaxBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxBackgroundView.swift; sourceTree = "<group>"; };
+		CB91542FEFAA7CF6FA3F365C8FF98507 /* SegmentedHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedHeaderCollectionViewCell.swift; path = FlexiTable/SegmentedHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFC01E5E9228379E76820C9CB90CA4BF /* Pods-FlexiTable-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexiTable-Example-frameworks.sh"; sourceTree = "<group>"; };
+		D363FCF4D7E361B3E08F5F43BA8CAF4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5F486BBAA0C530C87CB9824E4D72472 /* Pods-FlexiTable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexiTable-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C9B88883D164C53585F96C7913E401 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		F4C3E33293A991A685797F9D82BCB457 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B2D5C07F3657DE7137A7E41185FEFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840110F89097C561F1820F951A3CD18E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07E46EF7D0CC7F262609678D39C8AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D431E5CE48F6D6E62E54E6D097269CF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120192FC09EB2188040AC81B4B77CB8C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B902C742C967CDEE730165AD8898CF3F /* Pods-FlexiTable-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4DB4F8BED9002D29F1AFCC2EC28D2C24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				180D199668FC9052CC77E3953D7E4E25 /* FlexiTable.modulemap */,
+				A9A7B825BCA6E961CE935AB5C0B98205 /* FlexiTable.xcconfig */,
+				83843DA6D69A49AA16F277BD55CCE8D2 /* FlexiTable-dummy.m */,
+				AE3D751F29F64582DA96B0F4B2C6ECE8 /* FlexiTable-prefix.pch */,
+				BCC7FDC143F0E5668E4FEFB8266D2257 /* FlexiTable-umbrella.h */,
+				D363FCF4D7E361B3E08F5F43BA8CAF4A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../../../Desktop/Projects/Personal/FlexiTable/FlexiTable-Example/Pods/Target Support Files/FlexiTable";
+			sourceTree = "<group>";
+		};
+		51EE7004CB61B7563C4BFDD25A48E056 /* FlexiTable */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F2BFEEF41786F7F6FB923D07C7485 /* FlexiHeaderView.swift */,
+				BD66B406680EF5D4C9E0CB357E57BFD6 /* FlexiTableViewController.swift */,
+				CB91542FEFAA7CF6FA3F365C8FF98507 /* SegmentedHeaderCollectionViewCell.swift */,
+				786C509A4560BA24127A0FDDD373DCEB /* SegmentedHeaderView.swift */,
+				CBE5B1C38447492478982E94E283513B /* Pod */,
+				D5A004B2D1C3AE653081A04DC837D1E8 /* Resources */,
+				4DB4F8BED9002D29F1AFCC2EC28D2C24 /* Support Files */,
+				6E66FF07E57FE9D9338AA1DADD6EF419 /* Views */,
+			);
+			name = FlexiTable;
+			path = /Users/Shayne/Documents/Libraries/Swift/FlexiTable;
+			sourceTree = "<absolute>";
+		};
+		6E66FF07E57FE9D9338AA1DADD6EF419 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB69453E631A0A0439DBCC9F8E5C7600 /* ParallaxBackgroundView.swift */,
+				E9C9B88883D164C53585F96C7913E401 /* ParallaxHeaderView.swift */,
+				C342EB5672B90B6DEAEC1E83008B2B71 /* ProfileHeaderView.swift */,
+			);
+			name = Views;
+			path = FlexiTable/Views;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A648C951CD894745F06FE7FA8EDC63AB /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B9F4609624389F06793354FB29E5273F /* Products */,
+				120192FC09EB2188040AC81B4B77CB8C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A648C951CD894745F06FE7FA8EDC63AB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51EE7004CB61B7563C4BFDD25A48E056 /* FlexiTable */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B902C742C967CDEE730165AD8898CF3F /* Pods-FlexiTable-Example */ = {
+			isa = PBXGroup;
+			children = (
+				5A1E404B0367F87389F30DEDA3397C34 /* Info.plist */,
+				2EE084D6EF4DC4094BF9903091CE94D6 /* Pods-FlexiTable-Example.modulemap */,
+				736A8733444A448E01A596CCBD0364B2 /* Pods-FlexiTable-Example-acknowledgements.markdown */,
+				22794A10FA26F3B1A033EDEEC00846C2 /* Pods-FlexiTable-Example-acknowledgements.plist */,
+				950A13A7D5EB13626DF38C5B176B0746 /* Pods-FlexiTable-Example-dummy.m */,
+				CFC01E5E9228379E76820C9CB90CA4BF /* Pods-FlexiTable-Example-frameworks.sh */,
+				68C85ECCBE5E44178D4758E5F64CCC5A /* Pods-FlexiTable-Example-resources.sh */,
+				29562D6E3BD3F4A00891142A82656B3F /* Pods-FlexiTable-Example-umbrella.h */,
+				E5F486BBAA0C530C87CB9824E4D72472 /* Pods-FlexiTable-Example.debug.xcconfig */,
+				62EF908B35B1666DE00B5B464C61D502 /* Pods-FlexiTable-Example.release.xcconfig */,
+			);
+			name = "Pods-FlexiTable-Example";
+			path = "Target Support Files/Pods-FlexiTable-Example";
+			sourceTree = "<group>";
+		};
+		B9F4609624389F06793354FB29E5273F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4878FA30CA58A42CC2FC404AA099E14B /* FlexiTable.framework */,
+				B8DC8BC474A7ED109D7680509A856E49 /* Pods_FlexiTable_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBE5B1C38447492478982E94E283513B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				732B391F6F5B9EDC9C0FBA478674BF21 /* FlexiTable.podspec */,
+				F4C3E33293A991A685797F9D82BCB457 /* LICENSE */,
+				80DAD267DD37A5F31FAFB6763EECD0A0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D5A004B2D1C3AE653081A04DC837D1E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				804B9ADB6E1F867D9C8092F2E0DCA157 /* back_arrow.png */,
+				793608EF41268EFCC065CD565E8C0150 /* whiteX.png */,
+				6172C9EF7CBE86E1ADCD86AB1727F557 /* whiteX@2x.png */,
+				67323DE67C93D5FDBE93C11A27237590 /* whiteX@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5527CFC41A40AB1CDA6EBAA57A0097C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACCC3A486F1DEE4DFF0F505363B1AB2 /* Pods-FlexiTable-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72639C8E971E4CF8510CA0B250563029 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07290F01E7E0BE63232F42F8D689CA6 /* FlexiTable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B279DD90526DA373A6345E5FAB7689D1 /* FlexiTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C41BDD9BEFD2B4F49E226C381D68DBA /* Build configuration list for PBXNativeTarget "FlexiTable" */;
+			buildPhases = (
+				72639C8E971E4CF8510CA0B250563029 /* Headers */,
+				6C0E0AF6C9D81FA5E6282E6627997B14 /* Sources */,
+				A07E46EF7D0CC7F262609678D39C8AEE /* Frameworks */,
+				5A083A5E91B273AB0BD8D015ECAC73D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexiTable;
+			productName = FlexiTable;
+			productReference = 4878FA30CA58A42CC2FC404AA099E14B /* FlexiTable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B430FC578C9C7E2842A832D55E33ACE6 /* Pods-FlexiTable-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9693D069559FD4ABB97F3E207677F6 /* Build configuration list for PBXNativeTarget "Pods-FlexiTable-Example" */;
+			buildPhases = (
+				5527CFC41A40AB1CDA6EBAA57A0097C2 /* Headers */,
+				9E1F7FE4439BDB21CCB14257DF40BF48 /* Sources */,
+				1B2D5C07F3657DE7137A7E41185FEFDA /* Frameworks */,
+				6DFF8C5EB0DDC1C1B6C1418D62F294BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AA363DD56EB6A42E506A725DBF7D5FD /* PBXTargetDependency */,
+			);
+			name = "Pods-FlexiTable-Example";
+			productName = "Pods-FlexiTable-Example";
+			productReference = B8DC8BC474A7ED109D7680509A856E49 /* Pods_FlexiTable_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B9F4609624389F06793354FB29E5273F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B279DD90526DA373A6345E5FAB7689D1 /* FlexiTable */,
+				B430FC578C9C7E2842A832D55E33ACE6 /* Pods-FlexiTable-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A083A5E91B273AB0BD8D015ECAC73D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1905678921C32331865EEAED30DDDD80 /* back_arrow.png in Resources */,
+				8F5D9FA3A654052F0C5507CD0674F8AB /* whiteX.png in Resources */,
+				B776BE739C448D8220F827275221F7DB /* whiteX@2x.png in Resources */,
+				0699161116B3ABA08A5657CE1CE6626F /* whiteX@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFF8C5EB0DDC1C1B6C1418D62F294BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C0E0AF6C9D81FA5E6282E6627997B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A5A27000B9A2564345DB27257D5344 /* FlexiHeaderView.swift in Sources */,
+				F7DE2FA85F11D801AF05DF2A9C4F22CC /* FlexiTable-dummy.m in Sources */,
+				F35E01EE3D6E732720A31FDF4ABC7B3F /* FlexiTableViewController.swift in Sources */,
+				BEBCA531ED1985D02CA718A9B5A0A571 /* ParallaxBackgroundView.swift in Sources */,
+				EC001AD951557AF70D2A1389E973E699 /* ParallaxHeaderView.swift in Sources */,
+				3E61582581A399C046C3B5DD98983983 /* ProfileHeaderView.swift in Sources */,
+				F4F6CB4E90257E26D93688705D74D212 /* SegmentedHeaderCollectionViewCell.swift in Sources */,
+				F2F840940C76932D81DFF6DC691980BA /* SegmentedHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1F7FE4439BDB21CCB14257DF40BF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139DD1F73F79F42D9D6FC856F0D5F979 /* Pods-FlexiTable-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AA363DD56EB6A42E506A725DBF7D5FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexiTable;
+			target = B279DD90526DA373A6345E5FAB7689D1 /* FlexiTable */;
+			targetProxy = B488B38ABB40355959E672358451BA68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		096DB39CF4487B3E4093B1E34586286D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62EF908B35B1666DE00B5B464C61D502 /* Pods-FlexiTable-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexiTable-Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39AC2326199F366E8EFC831BD5F58C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F486BBAA0C530C87CB9824E4D72472 /* Pods-FlexiTable-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexiTable-Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4977E2D2AEA7173299B64D0514E34597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A7B825BCA6E961CE935AB5C0B98205 /* FlexiTable.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexiTable/FlexiTable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexiTable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexiTable/FlexiTable.modulemap";
+				PRODUCT_MODULE_NAME = FlexiTable;
+				PRODUCT_NAME = FlexiTable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		73023BFDB9BDE8D6BD916627DB0EA6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A7B825BCA6E961CE935AB5C0B98205 /* FlexiTable.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexiTable/FlexiTable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexiTable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexiTable/FlexiTable.modulemap";
+				PRODUCT_MODULE_NAME = FlexiTable;
+				PRODUCT_NAME = FlexiTable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858D01EEFE984249A9581D18DBEA53F1 /* Debug */,
+				5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9693D069559FD4ABB97F3E207677F6 /* Build configuration list for PBXNativeTarget "Pods-FlexiTable-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39AC2326199F366E8EFC831BD5F58C5B /* Debug */,
+				096DB39CF4487B3E4093B1E34586286D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C41BDD9BEFD2B4F49E226C381D68DBA /* Build configuration list for PBXNativeTarget "FlexiTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4977E2D2AEA7173299B64D0514E34597 /* Debug */,
+				73023BFDB9BDE8D6BD916627DB0EA6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

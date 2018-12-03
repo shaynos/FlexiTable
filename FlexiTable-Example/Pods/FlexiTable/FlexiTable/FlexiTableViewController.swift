@@ -30,8 +30,8 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     tableTopConstraint: NSLayoutConstraint?
     
     public var segmentedHeaderView: SegmentedHeaderView?
-    public var foregroundView: FlexiHeaderView?
-    public var backgroundView: FlexiHeaderView?
+    public var foregroundView: FlexiTableForegroundBackgroundView?
+    public var backgroundView: FlexiTableForegroundBackgroundView?
     public var tableview: UITableView
     public var backButton: UIButton?
     
@@ -57,7 +57,7 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     }
     
     
-    public init(backgroundView: FlexiHeaderView, foregroundView: FlexiHeaderView, segmentedHeaderView: SegmentedHeaderView){
+    public init(backgroundView: FlexiTableForegroundBackgroundView, foregroundView: FlexiTableForegroundBackgroundView, segmentedHeaderView: SegmentedHeaderView){
         self.backgroundView = backgroundView
         self.foregroundView = foregroundView
         self.segmentedHeaderView = segmentedHeaderView
@@ -77,6 +77,7 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
         
         super.viewDidAppear(animated)
         
+        print("Table VAtop == ", tableTopConstraint?.constant ?? "empty")
     }
     
     
@@ -120,8 +121,10 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     @objc private func dismiss(_ sender:AnyObject?){
         self.navigationController?.setNavigationBarHidden(previousNavBarHidden!, animated: true)
         if (self != self.navigationController?.viewControllers[0]){
+            print("popping")
             self.navigationController?.popViewController(animated: true)
         } else{
+            print("dismissing")
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -204,6 +207,13 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
         
         tableTopConstraint = NSLayoutConstraint(item: tableview, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: statusBarHeight + navBarHeight + segmentedHeaderView!.frame.size.height)
         tableTopConstraint?.isActive = true
+        
+        print("Table top == ", tableTopConstraint?.constant ?? "empty")
+        print("statusBarHeight == ", statusBarHeight)
+        print("navBarHeight == ", navBarHeight)
+        print("segmentedHeaderView!.frame.size.height == ", segmentedHeaderView!.frame.size.height )
+        print("Table top == ", tableTopConstraint?.constant ?? "empty")
+
         
         tableview.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         tableview.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true

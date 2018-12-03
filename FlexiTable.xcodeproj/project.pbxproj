@@ -18,8 +18,8 @@
 		260A9BCC21B3796C0063FA6C /* whiteX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBD21B3796B0063FA6C /* whiteX@2x.png */; };
 		260A9BCD21B3796C0063FA6C /* whiteX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBE21B3796B0063FA6C /* whiteX@3x.png */; };
 		260A9BCE21B3796C0063FA6C /* whiteX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BBE21B3796B0063FA6C /* whiteX@3x.png */; };
-		260A9BCF21B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */; };
-		260A9BD021B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */; };
+		260A9BCF21B3796C0063FA6C /* FlexiHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiHeaderView.swift */; };
+		260A9BD021B3796C0063FA6C /* FlexiHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BBF21B3796B0063FA6C /* FlexiHeaderView.swift */; };
 		260A9BD121B3796C0063FA6C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */; };
 		260A9BD221B3796C0063FA6C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */; };
 		260A9BD321B3796C0063FA6C /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */; };
@@ -58,7 +58,7 @@
 		260A9BBC21B3796B0063FA6C /* back_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow.png; sourceTree = "<group>"; };
 		260A9BBD21B3796B0063FA6C /* whiteX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteX@2x.png"; sourceTree = "<group>"; };
 		260A9BBE21B3796B0063FA6C /* whiteX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteX@3x.png"; sourceTree = "<group>"; };
-		260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexiTableForegroundBackgroundView.swift; sourceTree = "<group>"; };
+		260A9BBF21B3796B0063FA6C /* FlexiHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexiHeaderView.swift; sourceTree = "<group>"; };
 		260A9BC121B3796B0063FA6C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		260A9BC221B3796B0063FA6C /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
 		260A9BC321B3796B0063FA6C /* ParallaxBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxBackgroundView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				260A9BBA21B3796B0063FA6C /* Assets */,
-				260A9BBF21B3796B0063FA6C /* FlexiTableForegroundBackgroundView.swift */,
+				260A9BBF21B3796B0063FA6C /* FlexiHeaderView.swift */,
 				260A9BC421B3796B0063FA6C /* FlexiTableViewController.swift */,
 				260A9BC621B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift */,
 				260A9BC521B3796C0063FA6C /* SegmentedHeaderView.swift */,
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				260A9BCF21B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */,
+				260A9BCF21B3796C0063FA6C /* FlexiHeaderView.swift in Sources */,
 				260A9BD721B3796C0063FA6C /* FlexiTableViewController.swift in Sources */,
 				260A9BD921B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */,
 				260A9BD121B3796C0063FA6C /* ProfileHeaderView.swift in Sources */,
@@ -294,7 +294,7 @@
 				260A9BDA21B3796C0063FA6C /* SegmentedHeaderView.swift in Sources */,
 				260A9BD821B3796C0063FA6C /* FlexiTableViewController.swift in Sources */,
 				260A9BDC21B3796C0063FA6C /* SegmentedHeaderCollectionViewCell.swift in Sources */,
-				260A9BD021B3796C0063FA6C /* FlexiTableForegroundBackgroundView.swift in Sources */,
+				260A9BD021B3796C0063FA6C /* FlexiHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

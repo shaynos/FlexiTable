@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1B2A683999B35B5D142F0F /* Pods_FlexiTable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5258AAE694B5937D9A0D9CE6 /* Pods_FlexiTable_Example.framework */; };
+		260A9BED21B388DF0063FA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9BEC21B388DF0063FA6C /* AppDelegate.swift */; };
+		260A9BF421B388E00063FA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BF321B388E00063FA6C /* Assets.xcassets */; };
+		260A9BF721B388E00063FA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260A9BF521B388E00063FA6C /* LaunchScreen.storyboard */; };
+		260A9C0221B388E00063FA6C /* FlexiTable_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C0121B388E00063FA6C /* FlexiTable_ExampleTests.swift */; };
+		260A9C0D21B388E00063FA6C /* FlexiTable_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C0C21B388E00063FA6C /* FlexiTable_ExampleUITests.swift */; };
+		260A9C2F21B38DEF0063FA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C2E21B38DEF0063FA6C /* ViewController.swift */; };
+		260A9C3E21B38DFE0063FA6C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3121B38DFE0063FA6C /* SectionHeaderView.swift */; };
+		260A9C3F21B38DFE0063FA6C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C3221B38DFE0063FA6C /* SectionHeaderView.xib */; };
+		260A9C4021B38DFE0063FA6C /* person.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C3421B38DFE0063FA6C /* person.jpeg */; };
+		260A9C4121B38DFE0063FA6C /* concert.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C3521B38DFE0063FA6C /* concert.jpeg */; };
+		260A9C4221B38DFE0063FA6C /* PeopleTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3721B38DFE0063FA6C /* PeopleTableAdapter.swift */; };
+		260A9C4321B38DFE0063FA6C /* BandsTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3821B38DFE0063FA6C /* BandsTableAdapter.swift */; };
+		260A9C4421B38DFE0063FA6C /* WithoutHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3A21B38DFE0063FA6C /* WithoutHeaderViewController.swift */; };
+		260A9C4521B38DFE0063FA6C /* ParallaxHeaderDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3B21B38DFE0063FA6C /* ParallaxHeaderDemoViewController.swift */; };
+		260A9C4621B38DFE0063FA6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3C21B38DFE0063FA6C /* ProfileViewController.swift */; };
+		260A9C4721B38DFE0063FA6C /* ManySegmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A9C3D21B38DFE0063FA6C /* ManySegmentsViewController.swift */; };
+		260A9C4921B38E090063FA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C4821B38E090063FA6C /* Main.storyboard */; };
+		260A9C5921B4E4300063FA6C /* close_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C5521B4E4200063FA6C /* close_image@3x.png */; };
+		260A9C5A21B4E4300063FA6C /* close_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C5621B4E42F0063FA6C /* close_image.png */; };
+		260A9C5B21B4E4300063FA6C /* close_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C5721B4E42F0063FA6C /* close_image@2x.png */; };
+		260A9C5C21B4E4300063FA6C /* back_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 260A9C5821B4E4300063FA6C /* back_image.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		260A9BFE21B388E00063FA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260A9BE121B388DF0063FA6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 260A9BE821B388DF0063FA6C;
+			remoteInfo = "FlexiTable-Example";
+		};
+		260A9C0921B388E00063FA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260A9BE121B388DF0063FA6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 260A9BE821B388DF0063FA6C;
+			remoteInfo = "FlexiTable-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		260A9BE921B388DF0063FA6C /* FlexiTable-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlexiTable-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		260A9BEC21B388DF0063FA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		260A9BF321B388E00063FA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		260A9BF621B388E00063FA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		260A9BF821B388E00063FA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260A9BFD21B388E00063FA6C /* FlexiTable-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlexiTable-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		260A9C0121B388E00063FA6C /* FlexiTable_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexiTable_ExampleTests.swift; sourceTree = "<group>"; };
+		260A9C0321B388E00063FA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260A9C0821B388E00063FA6C /* FlexiTable-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlexiTable-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		260A9C0C21B388E00063FA6C /* FlexiTable_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexiTable_ExampleUITests.swift; sourceTree = "<group>"; };
+		260A9C0E21B388E00063FA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260A9C2E21B38DEF0063FA6C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		260A9C3121B38DFE0063FA6C /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		260A9C3221B38DFE0063FA6C /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		260A9C3421B38DFE0063FA6C /* person.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person.jpeg; sourceTree = "<group>"; };
+		260A9C3521B38DFE0063FA6C /* concert.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concert.jpeg; sourceTree = "<group>"; };
+		260A9C3721B38DFE0063FA6C /* PeopleTableAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableAdapter.swift; sourceTree = "<group>"; };
+		260A9C3821B38DFE0063FA6C /* BandsTableAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsTableAdapter.swift; sourceTree = "<group>"; };
+		260A9C3A21B38DFE0063FA6C /* WithoutHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithoutHeaderViewController.swift; sourceTree = "<group>"; };
+		260A9C3B21B38DFE0063FA6C /* ParallaxHeaderDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderDemoViewController.swift; sourceTree = "<group>"; };
+		260A9C3C21B38DFE0063FA6C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		260A9C3D21B38DFE0063FA6C /* ManySegmentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManySegmentsViewController.swift; sourceTree = "<group>"; };
+		260A9C4821B38E090063FA6C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		260A9C5521B4E4200063FA6C /* close_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_image@3x.png"; sourceTree = "<group>"; };
+		260A9C5621B4E42F0063FA6C /* close_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_image.png; sourceTree = "<group>"; };
+		260A9C5721B4E42F0063FA6C /* close_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_image@2x.png"; sourceTree = "<group>"; };
+		260A9C5821B4E4300063FA6C /* back_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_image.png; sourceTree = "<group>"; };
+		5258AAE694B5937D9A0D9CE6 /* Pods_FlexiTable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexiTable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7121EC3F3DB5508AB9DFC5BC /* Pods-FlexiTable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexiTable-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example.release.xcconfig"; sourceTree = "<group>"; };
+		D6DC0EEB8B2DB306EE3BEBE0 /* Pods-FlexiTable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexiTable-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		260A9BE621B388DF0063FA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1B2A683999B35B5D142F0F /* Pods_FlexiTable_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9BFA21B388E00063FA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9C0521B388E00063FA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260A9BE021B388DF0063FA6C = {
+			isa = PBXGroup;
+			children = (
+				260A9BEB21B388DF0063FA6C /* FlexiTable-Example */,
+				260A9C0021B388E00063FA6C /* FlexiTable-ExampleTests */,
+				260A9C0B21B388E00063FA6C /* FlexiTable-ExampleUITests */,
+				260A9BEA21B388DF0063FA6C /* Products */,
+				9025CA73F270168CEDBB8CF8 /* Pods */,
+				FA12C19A1425375A46B7B48C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		260A9BEA21B388DF0063FA6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260A9BE921B388DF0063FA6C /* FlexiTable-Example.app */,
+				260A9BFD21B388E00063FA6C /* FlexiTable-ExampleTests.xctest */,
+				260A9C0821B388E00063FA6C /* FlexiTable-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		260A9BEB21B388DF0063FA6C /* FlexiTable-Example */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C3321B38DFE0063FA6C /* Assets */,
+				260A9C3621B38DFE0063FA6C /* Table Adapters */,
+				260A9C3921B38DFE0063FA6C /* ViewControllers */,
+				260A9C3021B38DFE0063FA6C /* Views */,
+				260A9BEC21B388DF0063FA6C /* AppDelegate.swift */,
+				260A9C2E21B38DEF0063FA6C /* ViewController.swift */,
+				260A9C4821B38E090063FA6C /* Main.storyboard */,
+				260A9BF321B388E00063FA6C /* Assets.xcassets */,
+				260A9BF521B388E00063FA6C /* LaunchScreen.storyboard */,
+				260A9BF821B388E00063FA6C /* Info.plist */,
+			);
+			path = "FlexiTable-Example";
+			sourceTree = "<group>";
+		};
+		260A9C0021B388E00063FA6C /* FlexiTable-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C0121B388E00063FA6C /* FlexiTable_ExampleTests.swift */,
+				260A9C0321B388E00063FA6C /* Info.plist */,
+			);
+			path = "FlexiTable-ExampleTests";
+			sourceTree = "<group>";
+		};
+		260A9C0B21B388E00063FA6C /* FlexiTable-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C0C21B388E00063FA6C /* FlexiTable_ExampleUITests.swift */,
+				260A9C0E21B388E00063FA6C /* Info.plist */,
+			);
+			path = "FlexiTable-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		260A9C3021B38DFE0063FA6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C3121B38DFE0063FA6C /* SectionHeaderView.swift */,
+				260A9C3221B38DFE0063FA6C /* SectionHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		260A9C3321B38DFE0063FA6C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C5821B4E4300063FA6C /* back_image.png */,
+				260A9C5621B4E42F0063FA6C /* close_image.png */,
+				260A9C5721B4E42F0063FA6C /* close_image@2x.png */,
+				260A9C5521B4E4200063FA6C /* close_image@3x.png */,
+				260A9C3421B38DFE0063FA6C /* person.jpeg */,
+				260A9C3521B38DFE0063FA6C /* concert.jpeg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		260A9C3621B38DFE0063FA6C /* Table Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C3721B38DFE0063FA6C /* PeopleTableAdapter.swift */,
+				260A9C3821B38DFE0063FA6C /* BandsTableAdapter.swift */,
+			);
+			path = "Table Adapters";
+			sourceTree = "<group>";
+		};
+		260A9C3921B38DFE0063FA6C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				260A9C3A21B38DFE0063FA6C /* WithoutHeaderViewController.swift */,
+				260A9C3B21B38DFE0063FA6C /* ParallaxHeaderDemoViewController.swift */,
+				260A9C3C21B38DFE0063FA6C /* ProfileViewController.swift */,
+				260A9C3D21B38DFE0063FA6C /* ManySegmentsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9025CA73F270168CEDBB8CF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6DC0EEB8B2DB306EE3BEBE0 /* Pods-FlexiTable-Example.debug.xcconfig */,
+				7121EC3F3DB5508AB9DFC5BC /* Pods-FlexiTable-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA12C19A1425375A46B7B48C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5258AAE694B5937D9A0D9CE6 /* Pods_FlexiTable_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		260A9BE821B388DF0063FA6C /* FlexiTable-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260A9C1121B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-Example" */;
+			buildPhases = (
+				B126649B930FFD528BB8C8F1 /* [CP] Check Pods Manifest.lock */,
+				260A9BE521B388DF0063FA6C /* Sources */,
+				260A9BE621B388DF0063FA6C /* Frameworks */,
+				260A9BE721B388DF0063FA6C /* Resources */,
+				BC479DA154CEB8A17095AD0E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlexiTable-Example";
+			productName = "FlexiTable-Example";
+			productReference = 260A9BE921B388DF0063FA6C /* FlexiTable-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		260A9BFC21B388E00063FA6C /* FlexiTable-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260A9C1421B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-ExampleTests" */;
+			buildPhases = (
+				260A9BF921B388E00063FA6C /* Sources */,
+				260A9BFA21B388E00063FA6C /* Frameworks */,
+				260A9BFB21B388E00063FA6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				260A9BFF21B388E00063FA6C /* PBXTargetDependency */,
+			);
+			name = "FlexiTable-ExampleTests";
+			productName = "FlexiTable-ExampleTests";
+			productReference = 260A9BFD21B388E00063FA6C /* FlexiTable-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		260A9C0721B388E00063FA6C /* FlexiTable-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260A9C1721B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-ExampleUITests" */;
+			buildPhases = (
+				260A9C0421B388E00063FA6C /* Sources */,
+				260A9C0521B388E00063FA6C /* Frameworks */,
+				260A9C0621B388E00063FA6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				260A9C0A21B388E00063FA6C /* PBXTargetDependency */,
+			);
+			name = "FlexiTable-ExampleUITests";
+			productName = "FlexiTable-ExampleUITests";
+			productReference = 260A9C0821B388E00063FA6C /* FlexiTable-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		260A9BE121B388DF0063FA6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Shayne Brady";
+				TargetAttributes = {
+					260A9BE821B388DF0063FA6C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					260A9BFC21B388E00063FA6C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 260A9BE821B388DF0063FA6C;
+					};
+					260A9C0721B388E00063FA6C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 260A9BE821B388DF0063FA6C;
+					};
+				};
+			};
+			buildConfigurationList = 260A9BE421B388DF0063FA6C /* Build configuration list for PBXProject "FlexiTable-Example" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 260A9BE021B388DF0063FA6C;
+			productRefGroup = 260A9BEA21B388DF0063FA6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				260A9BE821B388DF0063FA6C /* FlexiTable-Example */,
+				260A9BFC21B388E00063FA6C /* FlexiTable-ExampleTests */,
+				260A9C0721B388E00063FA6C /* FlexiTable-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		260A9BE721B388DF0063FA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260A9C4121B38DFE0063FA6C /* concert.jpeg in Resources */,
+				260A9BF721B388E00063FA6C /* LaunchScreen.storyboard in Resources */,
+				260A9C5A21B4E4300063FA6C /* close_image.png in Resources */,
+				260A9C3F21B38DFE0063FA6C /* SectionHeaderView.xib in Resources */,
+				260A9C5C21B4E4300063FA6C /* back_image.png in Resources */,
+				260A9C4921B38E090063FA6C /* Main.storyboard in Resources */,
+				260A9C4021B38DFE0063FA6C /* person.jpeg in Resources */,
+				260A9BF421B388E00063FA6C /* Assets.xcassets in Resources */,
+				260A9C5B21B4E4300063FA6C /* close_image@2x.png in Resources */,
+				260A9C5921B4E4300063FA6C /* close_image@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9BFB21B388E00063FA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9C0621B388E00063FA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B126649B930FFD528BB8C8F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlexiTable-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC479DA154CEB8A17095AD0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexiTable/FlexiTable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexiTable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlexiTable-Example/Pods-FlexiTable-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		260A9BE521B388DF0063FA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260A9C2F21B38DEF0063FA6C /* ViewController.swift in Sources */,
+				260A9C4221B38DFE0063FA6C /* PeopleTableAdapter.swift in Sources */,
+				260A9C4321B38DFE0063FA6C /* BandsTableAdapter.swift in Sources */,
+				260A9C3E21B38DFE0063FA6C /* SectionHeaderView.swift in Sources */,
+				260A9C4521B38DFE0063FA6C /* ParallaxHeaderDemoViewController.swift in Sources */,
+				260A9C4421B38DFE0063FA6C /* WithoutHeaderViewController.swift in Sources */,
+				260A9C4721B38DFE0063FA6C /* ManySegmentsViewController.swift in Sources */,
+				260A9C4621B38DFE0063FA6C /* ProfileViewController.swift in Sources */,
+				260A9BED21B388DF0063FA6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9BF921B388E00063FA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260A9C0221B388E00063FA6C /* FlexiTable_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260A9C0421B388E00063FA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260A9C0D21B388E00063FA6C /* FlexiTable_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		260A9BFF21B388E00063FA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 260A9BE821B388DF0063FA6C /* FlexiTable-Example */;
+			targetProxy = 260A9BFE21B388E00063FA6C /* PBXContainerItemProxy */;
+		};
+		260A9C0A21B388E00063FA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 260A9BE821B388DF0063FA6C /* FlexiTable-Example */;
+			targetProxy = 260A9C0921B388E00063FA6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		260A9BF521B388E00063FA6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				260A9BF621B388E00063FA6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		260A9C0F21B388E00063FA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		260A9C1021B388E00063FA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		260A9C1221B388E00063FA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DC0EEB8B2DB306EE3BEBE0 /* Pods-FlexiTable-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJD9G93987;
+				INFOPLIST_FILE = "FlexiTable-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		260A9C1321B388E00063FA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7121EC3F3DB5508AB9DFC5BC /* Pods-FlexiTable-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJD9G93987;
+				INFOPLIST_FILE = "FlexiTable-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		260A9C1521B388E00063FA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlexiTable-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexiTable-Example.app/FlexiTable-Example";
+			};
+			name = Debug;
+		};
+		260A9C1621B388E00063FA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlexiTable-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlexiTable-Example.app/FlexiTable-Example";
+			};
+			name = Release;
+		};
+		260A9C1821B388E00063FA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlexiTable-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlexiTable-Example";
+			};
+			name = Debug;
+		};
+		260A9C1921B388E00063FA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FlexiTable-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaynebrady.FlexiTable-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FlexiTable-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		260A9BE421B388DF0063FA6C /* Build configuration list for PBXProject "FlexiTable-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260A9C0F21B388E00063FA6C /* Debug */,
+				260A9C1021B388E00063FA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260A9C1121B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260A9C1221B388E00063FA6C /* Debug */,
+				260A9C1321B388E00063FA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260A9C1421B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260A9C1521B388E00063FA6C /* Debug */,
+				260A9C1621B388E00063FA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260A9C1721B388E00063FA6C /* Build configuration list for PBXNativeTarget "FlexiTable-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260A9C1821B388E00063FA6C /* Debug */,
+				260A9C1921B388E00063FA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 260A9BE121B388DF0063FA6C /* Project object */;
+}

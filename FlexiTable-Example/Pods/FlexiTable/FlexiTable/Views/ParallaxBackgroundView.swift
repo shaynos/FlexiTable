@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ParallaxBackgroundView: FlexiHeaderView {
+public class ParallaxBackgroundView: FlexiTableForegroundBackgroundView {
     let imageView: UIImageView
     let dimmerView = UIView()
     

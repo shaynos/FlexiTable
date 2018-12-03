@@ -34,7 +34,7 @@ FlexiTable uses anchors to create a flexible space above the table which is used
 #### 1- FlexiHeaderView
 FlexiHeaderView is a UIView subclass which acts as the header for the FlexiTableViewController, it reacts to scroll events by shrinking or expanding depending on which way the user is scrolling and the contentOffset of the tableView.
 
-#### 1- SegmentedHeaderView
+#### 2- SegmentedHeaderView
 SegmentedHeaderView is a UICollectionView subclass which acts as the header for the tableView, it reacts to scroll events by moving with the tableView content as the user scrolls. It will stick to the top of the tableView to ensure that it is always present on the screen. A user can change the content of the tableView by selecting an option from the SegmentedHeaderView.
 
 
@@ -177,8 +177,7 @@ There are two delegate methods which are called when the SegmentedHeaderView is 
 Contribute
 ----------
 
-We would love you for the contribution to **FlexiTable**, check the `LICENSE`
-file for more info.
+We would love you to contribute to **FlexiTable**
 
  
 

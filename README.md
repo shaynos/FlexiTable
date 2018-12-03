@@ -25,6 +25,15 @@ consists of 3 main parts:
 
  
 
+gifsicle -b animated.gif -O3 -o your_out.gif  
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+![](animated.gif)
+![](animated 2.gif)
+![](animated 3.gif)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 gifsicle -b animated.gif -O3 -o your_out.gif
 ![](animated.gif)
@@ -33,6 +42,14 @@ gifsicle -b animated.gif -O3 -o your_out.gif
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
+
+ 
+
+![](animated.gif)
+
+![](animated 2.gif)
+
+![](animated 3.gif)
 
 Features
 --------

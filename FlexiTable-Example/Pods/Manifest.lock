@@ -1,0 +1,16 @@
+PODS:
+  - FlexiTable (0.2.0)
+
+DEPENDENCIES:
+  - FlexiTable (from `/Users/Shayne/Documents/Libraries/Swift/FlexiTable`)
+
+EXTERNAL SOURCES:
+  FlexiTable:
+    :path: "/Users/Shayne/Documents/Libraries/Swift/FlexiTable"
+
+SPEC CHECKSUMS:
+  FlexiTable: b927a308adf2b77e61769ef2d7797b8be0f4f4ff
+
+PODFILE CHECKSUM: 8a5ef4c54e62942193a15eef5dbd87d1fc54cb9b
+
+COCOAPODS: 1.5.3

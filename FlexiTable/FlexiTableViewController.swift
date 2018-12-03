@@ -35,6 +35,9 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     public var tableview: UITableView
     public var backButton: UIButton?
     
+    public var closeImage: UIImage?
+    public var backImage: UIImage?
+    
     override open func loadView() {
         self.view = UIView()
         if (self.view == nil){
@@ -221,27 +224,6 @@ open class FlexiTableViewController: UIViewController, UITableViewDelegate{
     }
     
     private func layoutBackButton(){
-        /*
-        let frameworkBundle = Bundle(for: FlexiTableViewController.self)
-        print("Frame = ", frameworkBundle as Any)
-
-        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("FlexiTable.bundle")
-        
-        print("bundle = ", bundleURL as Any)
-        
-        //let resourceBundle = Bundle(path: bundleURL)
-        
-        let resourceBundle = Bundle(url: bundleURL!)
-        print("resource = ", resourceBundle as Any)
-         
-         let closeImage = UIImage(named: "whiteX.png", in: resourceBundle, compatibleWith: nil)
-         let backImage = UIImage(named: "back_arrow.png", in: resourceBundle, compatibleWith: nil)
-*/
-        
-        let closeImage = UIImage(named: "close_image", in: Bundle(for: type(of: self)), compatibleWith: nil)
-        let backImage = UIImage(named: "back_image", in: Bundle(for: type(of: self)), compatibleWith: nil)
-
-        print("CLOSE = ", closeImage as Any)
         
         if (foregroundView != nil){
             // no nav bar required as we have the header view. Add a navigation button to handle pop / dismiss

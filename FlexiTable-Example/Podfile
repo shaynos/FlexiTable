@@ -4,7 +4,6 @@
 target 'FlexiTable-Example' do
   use_frameworks!
 
-  pod 'FlexiTable', :path => '/Users/Shayne/Documents/Libraries/Swift/FlexiTable'
-  #pod 'FlexiTable'
+  pod 'FlexiTable'
 
 end
